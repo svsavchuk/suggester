@@ -11,11 +11,15 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Programming Language Suggester</title>
 </head>
 
-<body>
+<body class="bg-light text-dark">
   <!-- // Extra small devices (portrait phones, less than 576px)
   // No media query since this is the default in Bootstrap
 
@@ -31,25 +35,107 @@
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... } -->
 
+
+
+  <!-- <nav class="navbar fixed-top navbar-light bg-dark">
+  <a class="navbar-brand" href="#">Fixed top</a>
+</nav> -->
+
+<!-- <nav class="navbar fixed-top navbar-dark bg-success">
+<div class="container">
+<i class="fa fa-github-square" style="font-size:48px"></i>
+<a class="navbar-brand" href="#">Brand Name</a>
+</div>
+</nav> -->
+
+<nav class="navbar sticky-top navbar-light //bg-success// ">
   <div class="container">
+    <a class="navbar-brand" href="#">Sticky top</a>
+    <div>
+      <!-- <div class="btn-group" role="toptoolbar" aria-label="Basic example"> -->
+      <button type="button" class="btn btn-primary">Language 1</button>
+      <button type="button" class="btn btn-info text-light ">Language 2</button>
+      <button type="button" class="btn btn-warning">Language 3</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <br>
+    <br>
     <h1>Hello, aspiring programmer!</h1>
     <h2>You're in right place.</h2>
-    <p>Please make selections below to decide which language you  should learn first.</p>
+    <p>Please make selections below to decide which language you should learn first.</p>
+    <hr>
   </div>
 
   <div class="container">
     <form class="" action="index.html" method="post">
-      <label for="select-1">How many years of experience do you have?</label>
-      <select class="" id="select-1" name="">
-        <option value="one" selected>Less than 1</option>
-        <option value="two">Between 1 and 3</option>>
-        <option value="three">3 or more</option>
-      </select>
-      <br>
+
+      <label class="col-md-8 col-form-label" for="os">Do you eat Eggo Waffles <em>every</em> morning?</label>
+      <div class="col-md-4">
+        <select class="dropdown" id="waffles" name="">
+          <option value="yes">Definitely yes!</option>
+          <option value="no">Oops. No! </option>
+        </select>
+      </div>
+
+      <label class="col-md-8 col-form-label " for="experience">How many years of experience do you have?</label>
+      <div class="col-md-4">
+        <select class="dropdown" id="experience" name="">
+          <option value="one" selected>Less than 1</option>
+          <option value="two">Between 1 and 3</option>>
+          <option value="three">3 or more</option>
+        </select>
+      </div>
+
+      <label class="col-md-8 col-form-label" for="platform">Are you primarily interested in developing desktop or web applications?</label>
+      <div class="col-md-4">
+        <select class="dropdown" id="platform" name="">
+          <option value="desktop">Desktop</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
+
+      <label class="col-md-8 col-form-label" for="os">Are you primarily interested in developing desktop or web applications?</label>
+      <div class="col-md-4">
+        <select class="dropdown" id="os" name="">
+          <option value="macOS">macOS</option>
+          <option value="Windows">Windows</option>
+        </select>
+      </div>
+
+      <label class="col-md-8 col-form-label" for="front-back-end">Do you want to develop front end, back end, or both?</label>
+      <div class="col-md-4">
+        <select class="dropdown" id="front-back-end" name="">
+          <option value="frontend">Front end</option>
+          <option value="backend">Back end</option>
+          <option value="both">Both</option>
+        </select>
+      </div>
+
       <br>
       <button type="button" name="button" class="btn btn-success">Ready to find out?</button>
+      <hr>
     </form>
   </div>
+
+  <!-- <div class="container">
+  <blockquote class="blockquotetext-muted">
+  <p class="mb-0">The most disastrous thing that you can ever learn is your first programming language.</p>
+  <footer class="blockquote-footer text-success"">Alan Kay</footer>
+</blockquote>
+</div> -->
+
+<nav class="navbar fixed-bottom navbar-light bg-success">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="#">Brand Name</a> -->
+    <blockquote class="blockquote text-white">
+      <p class="mb-0">The most disastrous thing that you can ever learn is your first programming language.</p>
+      <footer class="blockquote-footer text-white-50">Alan Kay</footer>
+    </blockquote>
+    <p>© Serhiy Savchuk</p>
+  </div>
+</nav>
 
 </body>
 </html>
