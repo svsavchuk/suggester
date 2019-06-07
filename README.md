@@ -1,7 +1,7 @@
 # Programming Language Suggester
 _Created 6/7/2019._
 #### By Serhiy Savchuk
-_This application will help people, interested in coding, decide which language they should learn first._
+_This application will help people, who are interested in coding, decide which language they should learn first._
 #### Setup Instructions
 _This page runs in all modern browsers and requires no additioanl installation packages._
 #### Techonologies Used
