@@ -8,7 +8,11 @@
   background-color: red;
 } */
 
-
+/* 
 .dropdown {
 /width: 100%;
-  }
+  } */
+
+.btn-group button {
+  margin: 10px
+}
