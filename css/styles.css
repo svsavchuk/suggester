@@ -8,11 +8,28 @@
   background-color: red;
 } */
 
-/* 
+/*
 .dropdown {
 /width: 100%;
   } */
-
+/*
 .btn-group button {
   margin: 10px
+} */
+
+#javascript {
+  /* display: none; */
+}
+
+#python {
+  /* display: none; */
+}
+
+#swift {
+  /* display: none; */
+}
+
+
+#c{
+  /* display: none; */
 }
