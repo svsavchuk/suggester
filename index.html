@@ -8,8 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -17,10 +16,40 @@
 </head>
 
 <body>
-  <h1>Hello, aspiring programmer!</h1>
-  <h2>You're in right place.</h2>
-  <p>Please make selections below to decide which language you  should learn first.</p>
+  <!-- // Extra small devices (portrait phones, less than 576px)
+  // No media query since this is the default in Bootstrap
 
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... } -->
+
+  <div class="container">
+    <h1>Hello, aspiring programmer!</h1>
+    <h2>You're in right place.</h2>
+    <p>Please make selections below to decide which language you  should learn first.</p>
+  </div>
+
+  <div class="container">
+    <form class="" action="index.html" method="post">
+      <label for="select-1">How many years of experience do you have?</label>
+      <select class="" id="select-1" name="">
+        <option value="one" selected>Less than 1</option>
+        <option value="two">Between 1 and 3</option>>
+        <option value="three">3 or more</option>
+      </select>
+      <br>
+      <br>
+      <button type="button" name="button" class="btn btn-success">Ready to find out?</button>
+    </form>
+  </div>
 
 </body>
 </html>
