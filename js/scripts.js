@@ -17,13 +17,22 @@ $(document).ready(function(){
     var frontbackend =
     $("#frontbackend").val();
 
-    if (waffles === "yes") {
-      alert("Waffles is yes");
+    if (waffles === "no") {
+      alert("You can't be a programmer");
+    } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "macos" && frontbackend === "front") {
+      alert("1");
+    } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "macos" && frontbackend === "back") {
+      alert("2");
     } else {
-      alert("Waffles is no");
+      alert("3");
     }
-    // alert("Answer is: "+waffles+" "+platform+" "+os+" "+frontbackend+".");
 
     event.preventDefault();
+
+    // To enable tooltips
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
   });
 });
