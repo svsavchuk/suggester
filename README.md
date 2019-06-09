@@ -11,7 +11,7 @@ _This page runs in all modern browsers and requires no additioanl installation p
 * _JavaScript_
 
 #### Support and Contact Details
-_Feel free to contact me if you have any questions. My contact information is listed at the bottom of my portfolio pagea at https://svsavchuk.github.io/portfolio._
+_Feel free to contact me if you have any questions. My contact information is listed at the bottom of current project page at https://svsavchuk.github.io/suggester/._
 #### License
 _The content of this site is licensed under MIT._
 
