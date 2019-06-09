@@ -1,35 +1,21 @@
-/* form {
-  max-width: 900px;
-  display: block;
-  margin: 0 auto;
-} */
 
-/* * {
-  background-color: red;
-} */
-
-/*
-.dropdown {
-/width: 100%;
-  } */
-/*
-.btn-group button {
-  margin: 10px
-} */
+/* Hide paragraphs until user answers survey questons and submits the form. */
+#cannotbe {
+  display: none;
+}
 
 #javascript {
-  /* display: none; */
+  display: none;
 }
 
 #python {
-  /* display: none; */
+  display: none;
 }
 
 #swift {
-  /* display: none; */
+  display: none;
 }
 
-
 #c{
-  /* display: none; */
+  display: none;
 }

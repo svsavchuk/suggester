@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
 
@@ -35,103 +37,94 @@
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... } -->
 
+  <nav class="navbar sticky-top navbar-light bg-success">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="https://github.com/svsavchuk/suggester/commits/master"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="bottom" title="View source code on GitHub."></i></a>
+      <div>
 
-
-  <!-- <nav class="navbar fixed-top navbar-light bg-dark">
-  <a class="navbar-brand" href="#">Fixed top</a>
-</nav> -->
-
-<!-- <nav class="navbar fixed-top navbar-dark bg-success">
-<div class="container">
-<i class="fa fa-github-square" style="font-size:48px"></i>
-<a class="navbar-brand" href="#">Brand Name</a>
-</div>
-</nav> -->
-
-<nav class="navbar sticky-top navbar-light bg-success">
-  <div class="container">
-    <a class="navbar-brand" href="https://github.com/svsavchuk/suggester/commits/master"> <i class="fa fa-github fa-2x"></i></a>
-    <div>
-      <!-- <div class="btn-group" role="toptoolbar" aria-label="Basic example"> -->
-      <!-- <div class="btn-group" role="toptoolbar" aria-label="Basic example"> -->
-      <!-- <i class="fa fa-github fa-2x"></i> -->
-
-      <button type="button" class="btn btn-dark">JavaScript</button>
-      <button type="button" class="btn btn-dark ">Python</button>
-      <button type="button" class="btn btn-dark">Swift</button>
-      <button type="button" class="btn btn-dark">C#</button>
-    </div>
-  </nav>
-
-  <div class="container">
-    <br>
-    <br>
-    <h1 class="text-primary">Hello, aspiring programmer!</h1>
-    <h5 class ="text-success">You're in right place.</h5>
-    <p>Please make selections below to decide which language you should learn first.</p>
-    <hr>
-  </div>
-
-  <div class="container">
-    <form class="" action="index.html" method="post">
-
-      <label class="col-md-8 col-form-label" for="os">Do you eat Eggo Waffles <em>every</em> morning?</label>
-      <div class="col-md-4">
-        <select class="dropdown" id="waffles" name="">
-          <option value="yes">Definitely yes!</option>
-          <option value="no">Oops. No! </option>
-        </select>
+        <a class="btn btn-dark" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Read more on Wikipedia." href="https://en.wikipedia.org/wiki/JavaScript" role="button">JavaScript</a>
+        <a class="btn btn-dark" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Read more on Wikipedia." href="https://en.wikipedia.org/wiki/Python_(programming_language)" role="button">Python</a>
+        <a class="btn btn-dark" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Read more on Wikipedia." href="https://en.wikipedia.org/wiki/Swift_(programming_language)" role="button">Swift</a>
+        <a class="btn btn-dark" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Read more on Wikipedia." href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" role="button">C#</a>
       </div>
+    </nav>
 
-      <label class="col-md-8 col-form-label " for="experience">How many years of experience do you have?</label>
-      <div class="col-md-4">
-        <select class="dropdown" id="experience" name="">
-          <option value="one" selected>Less than 1</option>
-          <option value="two">One or more</option>>
-        </select>
-      </div>
-
-      <label class="col-md-8 col-form-label" for="platform">Are you primarily interested in developing desktop or web applications?</label>
-      <div class="col-md-4">
-        <select class="dropdown" id="platform" name="">
-          <option value="desktop">Desktop</option>
-          <option value="web">Web</option>
-        </select>
-      </div>
-
-      <label class="col-md-8 col-form-label" for="os">Are you primarily interested in developing desktop or web applications?</label>
-      <div class="col-md-4">
-        <select class="dropdown" id="os" name="">
-          <option value="macOS">macOS</option>
-          <option value="Windows">Windows</option>
-        </select>
-      </div>
-
-      <label class="col-md-8 col-form-label" for="front-back-end">Do you want to develop front end, back end, or both?</label>
-      <div class="col-md-4">
-        <select class="dropdown" id="front-back-end" name="">
-          <option value="frontend">Front end</option>
-          <option value="backend">Back end</option>
-        </select>
-      </div>
-
+    <div class="container">
       <br>
-      <button type="button" name="button" class="btn btn-success">Ready to find out?</button>
+      <br>
+      <h1 class="text-primary">Hello, aspiring developer!</h1>
+      <h5 class ="text-success">You're in right place.</h5>
+      <p>Please answer questions below for a suggestion which language you should learn first.</p>
       <hr>
-    </form>
-  </div>
+    </div>
 
-  <div class="container">
-    <div class="language-description"
-      <div id="javascript"</p>
-        <h5 class="text-primary">JavaScript</h5>
-        <p>Based on your selection, we think you should consider learning JavaScript.</p>
+    <div class="container">
+      <form id="form-one" action="index.html" method="post">
+
+        <label class="col-md-8 col-form-label" for="os">Do you eat Eggo waffles <em>every</em> morning?</label>
+        <div class="col-md-4">
+          <select class="dropdown" id="waffles" name="">
+            <option value="yes">Definitely yes!</option>
+            <option value="no">Oops. No! </option>
+          </select>
+        </div>
+
+        <label class="col-md-8 col-form-label " for="experience">How many years of experience do you have?</label>
+        <div class="col-md-4">
+          <select class="dropdown" id="experience" name="">
+            <option value="one" selected>Less than 1</option>
+            <option value="two">Less than one</option>>
+            <option value="three">One or more/option>
+          </select>
+        </div>
+
+        <label class="col-md-8 col-form-label" for="platform">Are you primarily interested in developing desktop or web applications?</label>
+        <div class="col-md-4">
+          <select class="dropdown" id="platform" name="">
+            <option value="desktop">Desktop</option>
+            <option value="web">Web</option>
+          </select>
+        </div>
+
+        <label class="col-md-8 col-form-label" for="os">Which operating system to you prefer?</label>
+        <div class="col-md-4">
+          <select class="dropdown" id="os" name="">
+            <option value="macos">macOS</option>
+            <option value="windows">Windows</option>
+          </select>
+        </div>
+
+        <label class="col-md-8 col-form-label" for="front-back-end">Do you want to develop front end, back end, or both?</label>
+        <div class="col-md-4">
+          <select class="dropdown" id="frontbackend" name="">
+            <option value="frontend">Front-end</option>
+            <option value="backend">Back-end</option>
+          </select>
+        </div>
+
+        <br>
+        <button type="submit" name="button" class="btn btn-success">Ready to find out?</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="language-description"
+      <div id="cannotbe">
+        <hr>
+        <h5 class="textarea-primary">Opps! You don't like waffles?</h5>
+        <p>Sorry, you are're not qualified to be a developer!</p>
+      </div>
+
+      <div id="javascript">
+        <h5 class="textarea-primary">JavaScript</h5>
+        <p>Based on your answers, we think you should consider learning JavaScript.</p>
         <p>JavaScript is a high-level, interpreted programming language. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
         <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.</p>
         <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">https://en.wikipedia.org/wiki/JavaScript</a>
       </div>
 
       <div id="python">
+        <hr>
         <h5 class="text-primary">Python</h5>
         <p>Based on your selection, we think you should consider learning Python.</p>
         <p>Python is an interpreted, high-level, general-purpose programming language.</p>
@@ -140,6 +133,7 @@
       </div>
 
       <div id="swift">
+        <hr>
         <h5 class="text-primary">Swift</h5>
         <p>Based on your selection, we think you should consider learning Swift.</p>
         <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, Linux, and z/OS. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms, it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program.</p>
@@ -147,6 +141,7 @@
       </div>
 
       <div id="c">
+        <hr>
         <h5 class="text-primary">C#</h5>
         <p>Based on your selection, we think you should consider learning C#.</p>
         <p>C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[ It was developed around 2000 by Microsoft within its .NET initiative. C# is one of the programming languages designed for the Common Language Infrastructure.</p>
@@ -155,30 +150,18 @@
     </div>
   </div>
 
-  <hr>
-
   <div class="container">
+    <hr>
     <blockquote class="blockquotetext-muted">
-      <p class="mb-0">The most disastrous thing that you can ever learn is your first programming language.</p>
-      <footer class="blockquote-footer text-success"">Alan Kay</footer>
+      <p class="mb-0 font-italic">The most disastrous thing that you can ever learn is your first programming language.</p>
+      <footer class="blockquote-footer text-success font-italic text-right">Alan Kay</footer>
     </blockquote>
   </div>
 
-  <!-- <nav class="navbar fixed-bottom navbar-light bg-success">
-  <div class="container">
-  <a class="navbar-brand" href="#">Brand Name</a>
-  <blockquote class="blockquote text-white">
-  <p class="mb-0">The most disastrous thing that you can ever learn is your first programming language.</p>
-  <footer class="blockquote-footer text-white-50">Alan Kay</footer>
-</blockquote>
-<p>© Serhiy Savchuk</p>
-</div>
-</nav> -->
-
   <hr class="bg-success">
   <div class="container text-center">
-  <p>© Serhiy Savchuk</p>
-</div>
+    <p>© Serhiy Savchuk</p>
+  </div>
 
 </body>
 </html>
