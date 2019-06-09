@@ -1,6 +1,6 @@
 
 /* Hide paragraphs until user answers survey questons and submits the form. */
-#cannotbe {
+#disqualified {
   display: none;
 }
 
