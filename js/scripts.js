@@ -20,56 +20,72 @@ $(document).ready(function(){
 
     // To show a recommendation based on user's selections and hide previous recommendation(s).
     if (waffles === "no") {
+      $(".language").hide();
       $("#disqualified").show();
-      $("#javascript", "#python", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "macos" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#python").show();
-      $("#disqualified", "#javascript", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "macos" && frontbackend === "backend") {
+      $(".language").hide();
       $("#javascript").show();
-      $("#disqualified", "#python", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "windows" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#python").show();
-      $("#disqualified", "#javascript", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "desktop" && os === "windows" && frontbackend === "backend") {
+      $(".language").hide();
       $("#javascript").show();
-      $("#disqualified", "#python", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "macos" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#python").show();
-      $("#disqualified", "#javascript", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "macos" && frontbackend === "backend") {
+      $(".language").hide();
       alert("#javascript");
-      $("#disqualified", "#python", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "windows" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#python").show();
-      $("#disqualified", "#javascript", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "windows" && frontbackend === "backend") {
+      $(".language").hide();
       $("#javascript").show();
-      $("#disqualified", "#python", "#swift", "#c").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "desktop" && os === "macos" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#swift").show();
-      $("#disqualified", "#javascript", "#python", "#c").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "desktop" && os === "macos" && frontbackend === "backend") {
+      $(".language").hide();
       $("#swift").show();
-      $("#disqualified", "#javascript", "#python", "#c").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "desktop" && os === "windows" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#c").show();
-      $("#disqualified", "#javascript", "#python", "#swift").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "desktop" && os === "windows" && frontbackend === "backend") {
+      $(".language").hide();
       $("#c").show();
-      $("#disqualified", "#javascript", "#python", "#swift").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "web" && os === "macos" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#swift").show();
-      $("#disqualified", "#javascript", "#python", "#c").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "web" && os === "macos" && frontbackend === "backend") {
+      $(".language").hide();
       $("#swift").show();
-      $("#disqualified", "#javascript", "#python", "#c").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "web" && os === "windows" && frontbackend === "frontend") {
+      $(".language").hide();
       $("#c").show();
-      $("#disqualified", "#javascript", "#python", "#swift").hide();
+
     } else if (waffles === "yes" && experience === "two" && platform === "web" && os === "windows" && frontbackend === "backend") {
+      $(".language").hide();
       $("#c").show();
-      $("#disqualified", "#javascript", "#python", "#swift").hide();
     }
 
     // To block default click handling

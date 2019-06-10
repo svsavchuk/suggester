@@ -16,6 +16,12 @@
   display: none;
 }
 
-#c{
+#c {
   display: none;
+}
+
+
+.language {
+font-style: italic;
+padding-bottom: 30px;
 }
