@@ -45,7 +45,7 @@ $(document).ready(function(){
 
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "macos" && frontbackend === "backend") {
       $(".language").hide();
-      alert("#javascript");
+      $("#python").show();
 
     } else if (waffles === "yes" && experience === "one" && platform === "web" && os === "windows" && frontbackend === "frontend") {
       $(".language").hide();
