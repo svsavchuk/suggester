@@ -20,7 +20,7 @@
   display: none;
 }
 
-
+/* Style paragraphs that describe languages. */
 .language {
 font-style: italic;
 padding-bottom: 30px;
